@@ -118,29 +118,38 @@
                 
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon3">Nama</span>
-                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="nama">
+                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="nama" required>
                 </div>
                 
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon4">HP (WA)</span>
-                  <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="hp">
+                  <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="hp" required>
                 </div>
 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon4">Tujuan</span>
-                    <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="tujuan">
+                    <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="tujuan" required>
                   </div>
                 
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon5">Tgl. Keberangkatan</span>
-                  <input type="datetime-local" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="checkin">
+                  <input type="datetime-local" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="checkin" required>
                 </div>
 
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon6">Waktu (Hari)</span>
-                  <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="waktu">
+                  <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="waktu" min="1" required>
                 </div>
                 
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon6">Sewa Driver</span>
+                  <select class="form-select" aria-label="Default select example" required>
+                    <option selected>Pilih...</option>
+                    <option value="1">Ya (+ Rp. 100.000 / 24 jam)</option>
+                    <option value="2">Tidak</option>
+                  </select>
+                </div>
+
                 <div class="input-group">
                   <span class="input-group-text">Catatan</span>
                   <textarea class="form-control" aria-label="With textarea"></textarea>
