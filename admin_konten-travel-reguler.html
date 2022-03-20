@@ -9,6 +9,7 @@
         <title>Travel Reguler - Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -29,6 +30,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="admin_akun-info.html">Akun</a></li>
                         <li><a class="dropdown-item" href="index.html">Logout</a></li>
                     </ul>
                 </li>
@@ -79,7 +81,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Konten Travel Reguler</h1>
+                        <h3 class="mt-4">Konten Travel Reguler</h3>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Data</li>
                         </ol>
@@ -115,7 +117,7 @@
                                         <tr>
                                             <td>Bandung</td>
                                             <td>
-                                                <img src="images/tour/pantai_kuta_bali.jpg" alt="Foto Lokasi" style="width: 50px;;">
+                                                <img src="images/travel-reguler/floating_market_lembang_bandung.jpg" alt="Foto Lokasi" style="width: 50px;;">
                                             </td>
                                             <td>
                                                 Setibanya di Bandung kita akan...
@@ -124,7 +126,7 @@
                                             <td>
                                                 <a href="admin_read-travel-reguler.html" class="btn btn-info">Lihat</a>
                                                 <a href="admin_update-travel-reguler.html" class="btn btn-warning">Edit</a>
-                                                <a href="index.html" class="btn btn-danger" onclick="javascript:return confirm('Yakin hapus data ini?')">Hapus</a>
+                                                <a href="#" class="btn btn-danger">Hapus</a>
                                             </td>
                                         </tr>
 

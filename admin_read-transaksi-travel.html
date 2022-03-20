@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Travel Promo - Admin</title>
+        <title>Transaksi Travel - Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
@@ -42,7 +42,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Menu</div>
-                            <a class="nav-link collapsed active" href="#" data-bs-toggle="collapse" data-bs-target="#menuKonten" aria-expanded="false" aria-controls="collapseLayouts">
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#menuKonten" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Konten
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -50,18 +50,18 @@
                             <div class="collapse" id="menuKonten" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="admin_konten-travel-reguler.html">Travel-Reguler</a>
-                                    <a class="nav-link active" href="admin_konten-travel-promo.html">Travel-Promo</a>
+                                    <a class="nav-link" href="admin_konten-travel-promo.html">Travel-Promo</a>
                                     <a class="nav-link" href="admin_konten-rentcar.html">Rentcar</a>
                                 </nav>
                             </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#menuTransaksi" aria-expanded="false" aria-controls="collapseLayouts">
+                            <a class="nav-link collapsed active" href="#" data-bs-toggle="collapse" data-bs-target="#menuTransaksi" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Transaksi
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="menuTransaksi" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="admin_transaksi-travel.html">Travel</a>
+                                    <a class="nav-link active" href="admin_transaksi-travel.html">Travel</a>
                                     <a class="nav-link" href="admin_transaksi-rentcar.html">Rentcar</a>
                                 </nav>
                             </div>
@@ -81,68 +81,69 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h3 class="mt-4">Konten Travel Promo</h3>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Data</li>
-                        </ol>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <a href="admin_create-travel-promo.html" class="btn btn-primary">Tambah Data Baru</a>
-                            </div>
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Konten Travel Promo
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Foto</th>
-                                            <th>Deskripsi</th>
-                                            <th>Harga</th>
-                                            <th>Waktu</th>
-                                            <th>Jumlah (Orang)</th>
-                                            <th>Deadline</th>
-                                            <th colspan="2">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Foto</th>
-                                            <th>Deskripsi</th>
-                                            <th>Harga</th>
-                                            <th>Waktu (Hari)</th>
-                                            <th>Jumlah (Orang)</th>
-                                            <th>Deadline</th>
-                                            <th colspan="2">Aksi</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Bandung</td>
-                                            <td>
-                                                <img src="images/travel-promo/floating_market_lembang_bandung.jpg" alt="Foto Lokasi" style="width: 50px;;">
-                                            </td>
-                                            <td>
-                                                Setibanya di Bandung kita akan...
-                                            </td>
-                                            <td>900.000</td>
-                                            <td>3</td>
-                                            <td>6</td>
-                                            <td>18/03/2021</td>
-                                            <td>
-                                                <a href="admin_read-travel-promo.html" class="btn btn-info">Lihat</a>
-                                                <a href="admin_update-travel-promo.html" class="btn btn-warning">Edit</a>
-                                                <a href="#" class="btn btn-danger">Hapus</a>
-                                            </td>
-                                        </tr>
+                        <div class="col-md-12">
+                            <div class="card-body" style="text-align: left;">
+                                <h3 class="mb-3">Lihat Travel Reguler</h3>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Nama</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="nama" value="Pandu Bintang Yudhianto" readonly>
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon4">HP (WA)</span>
+                                    <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" value="0812 3456 7890" name="hp" readonly>
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon5">Tanggal</span>
+                                    <input type="datetime-local" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="checkin" value="2022-03-18T19:30" readonly>
+                                  </div>
+                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon6">Waktu (Hari)</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="waktu" min="1" value="4" readonly>
+                                  </div>
+                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon7">Jumlah (Orang)</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="jumlah" min="1" value="3" readonly>
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text">Catatan</span>
+                                    <textarea class="form-control" aria-label="With textarea" maxlength="25" readonly>Kendaraannya yang punya ruangan free smoking ya</textarea>
+                                  </div>
 
-                                    </tbody>
-                                </table>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon4">Tujuan</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" value="Malang" name="tujuan" readonly>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon4">Harga</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" value="900.000" name="harga" readonly>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text">Bukti Pembayaran</span>
+                                    <img src="images/bukti_pembayaran/travel/bukti_travel.jpg" class="img-thumbnail" alt="Bukti Pembayaran" style="width: 125px;">
+                                  </div>
+
+                                  <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon6">Status</span>
+                                    <select class="form-select" aria-label="Default select example" disabled>
+                                      <option selected value="3">Pembayaran</option>
+                                      <option value="1" disabled>Menunggu Konfirmasi Pesanan</option>
+                                      <option value="2" disabled>Menunggu Pembayaran</option>
+                                      <option value="4">Pembayaran Terkonfirmasi</option>
+                                      <option value="5">Selesai</option>
+                                      <option value="6" disabled>Gagal/Dibatalkan</option>
+                                    </select>
+                                  </div>
+                  
+                              <a class="button button-primary button-pipaluk" type="button" href="admin_transaksi-travel.html" style="text-decoration: none;">Kembali</a>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">

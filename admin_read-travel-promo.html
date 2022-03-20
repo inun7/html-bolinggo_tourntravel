@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Travel Promo - Admin</title>
+        <title>Lihat Travel Promo - Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
@@ -81,68 +81,47 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h3 class="mt-4">Konten Travel Promo</h3>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Data</li>
-                        </ol>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <a href="admin_create-travel-promo.html" class="btn btn-primary">Tambah Data Baru</a>
-                            </div>
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Konten Travel Promo
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Foto</th>
-                                            <th>Deskripsi</th>
-                                            <th>Harga</th>
-                                            <th>Waktu</th>
-                                            <th>Jumlah (Orang)</th>
-                                            <th>Deadline</th>
-                                            <th colspan="2">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Foto</th>
-                                            <th>Deskripsi</th>
-                                            <th>Harga</th>
-                                            <th>Waktu (Hari)</th>
-                                            <th>Jumlah (Orang)</th>
-                                            <th>Deadline</th>
-                                            <th colspan="2">Aksi</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Bandung</td>
-                                            <td>
-                                                <img src="images/travel-promo/floating_market_lembang_bandung.jpg" alt="Foto Lokasi" style="width: 50px;;">
-                                            </td>
-                                            <td>
-                                                Setibanya di Bandung kita akan...
-                                            </td>
-                                            <td>900.000</td>
-                                            <td>3</td>
-                                            <td>6</td>
-                                            <td>18/03/2021</td>
-                                            <td>
-                                                <a href="admin_read-travel-promo.html" class="btn btn-info">Lihat</a>
-                                                <a href="admin_update-travel-promo.html" class="btn btn-warning">Edit</a>
-                                                <a href="#" class="btn btn-danger">Hapus</a>
-                                            </td>
-                                        </tr>
+                        <div class="col-md-12">
+                            <div class="card-body" style="text-align: left;">
+                                <h3 class="mb-3">Lihat Travel Promo</h3>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Nama</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="nama" value="Bandung" readonly>
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon4">Foto</span>
+                                    <img src="images/travel-promo/floating_market_lembang_bandung.jpg" class="img-thumbnail" alt="Foto" style="width: 300px;">
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text">Deskripsi</span>
+                                    <textarea class="form-control" aria-label="With textarea" style="height: 250px; text-align: justify;" readonly>Malam hari pukul 23.30 rombongan dijemput di hotel / bandara / stasiun di Surabaya / Malang. Kemudian diantar menuju Bromo. Perjalanan kurang lebih 3-4 jam. Sesampainya di Sukapura / Cemoro lawang sekitar pukul 03.00 pagi. Rombongan menggunakan jeep mengikuti Bromo tour dengan melihat matahari terbit via Penanjakan/ Bukit Kingkong/Bukit cinta (bila cuaca memungkinkan), selanjutnya menuju ke Lautan Pasir, Kawah Gn. Bromo (Udaranya sangat dingin, pastikan menggunakan jaket tebal & sepatu anti slip). Setelah itu kembali menuju sukapura / cemoro lawang untuk makan pagi. Hingga saatnya diantar kembali ke hotel / bandara / stasiun di Surabaya / Malang. Perjalanan selesai, sampai bertemu kembali dengan AVIA Tour selanjutnya.</textarea>
+                                  </div>
 
-                                    </tbody>
-                                </table>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Harga</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="harga" value="500.000 - 900.000" readonly>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Waktu (Hari)</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="waktu" value="3" readonly>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Jumlah (Orang)</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="waktu" value="3" readonly>
+                                  </div>
+
+                                  <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon3">Deadline</span>
+                                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="deadline" value="2022-03-18" readonly>
+                                  </div>
+
+                              <a class="button button-primary button-pipaluk" type="button" href="admin_konten-travel-promo.html" style="text-decoration: none;">Kembali</a>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">

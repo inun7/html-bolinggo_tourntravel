@@ -81,60 +81,86 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h3 class="mt-4">Transaksi Rentcar</h3>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item active">Data</li>
-                        </ol>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Transaksi Rentcar
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>HP/WA</th>
-                                            <th>Tanggal</th>
-                                            <th>Mobil</th>
-                                            <th>Plat</th>
-                                            <th>Harga</th>
-                                            <th>Status</th>
-                                            <th colspan="2">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>HP/WA</th>
-                                            <th>Tanggal</th>
-                                            <th>Mobil</th>
-                                            <th>Plat</th>
-                                            <th>Harga</th>
-                                            <th>Status</th>
-                                            <th colspan="2">Aksi</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pandu Bintang Yudhianto</td>
-                                            <td>083 895 304 050</td>
-                                            <td>18/03/2022</td>
-                                            <td>Toyota Innova 7 Seat</td>
-                                            <td>P 8730 HH</td>
-                                            <td>900.000</td>
-                                            <td>Pembayaran</td>
-                                            <td>
-                                                <a href="admin_read-transaksi-rentcar.html" class="btn btn-info">Lihat</a>
-                                                <a href="admin_verifikasi-transaksi-rentcar.html" class="btn btn-warning">Verifikasi</a>
-                                            </td>
-                                        </tr>
+                        <div class="col-md-12">
+                            <div class="card-body" style="text-align: left;">
+                                <h3 class="mb-3">Lihat Travel Reguler</h3>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Nama</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="nama" value="Pandu Bintang Yudhianto" readonly>
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon4">HP (WA)</span>
+                                    <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" value="0812 3456 7890" name="hp" readonly>
+                                  </div>
 
-                                    </tbody>
-                                </table>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon4">Tujuan</span>
+                                    <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" value="Banyuwangi" name="tujuan" readonly>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon4">Foto KTP</span>
+                                    <img src="images/foto_ktp/foto_ktp.jpg" class="img-thumbnail" alt="Foto KTP Pemesan" style="width: 300px;">
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon5">Tanggal</span>
+                                    <input type="datetime-local" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="checkin" value="2022-03-18T19:30" readonly>
+                                  </div>
+                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon6">Waktu (Hari)</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="waktu" min="1" value="4" readonly>
+                                  </div>
+                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon6">Sewa Driver</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="sewa_driver" min="1" value="Ya (+ Rp. 100.000 / 24 jam)" readonly>
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text">Catatan</span>
+                                    <textarea class="form-control" aria-label="With textarea" maxlength="25" readonly>Pastikan mesinnya, takut mogok di jalan.</textarea>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon6">Mobil</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="mobil" value="Toyota Innova 7 Seat" readonly>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon6">Plat</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="plat" value="P 9273 KN" readonly>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon6">Warna</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="warna" value="Hitam" readonly>
+                                  </div>
+
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text">Bukti Pembayaran</span>
+                                    <img src="images/bukti_pembayaran/rentcar/bukti_rentcar.jpg" class="img-thumbnail" alt="Bukti Pembayaran" style="width: 125px;">
+                                  </div>
+
+
+                                  <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon6">Status</span>
+                                    <select class="form-select" aria-label="Default select example">
+                                      <option selected value="3">Pembayaran</option>
+                                      <option value="1" disabled>Menunggu Konfirmasi Pesanan</option>
+                                      <option value="2" disabled>Menunggu Pembayaran</option>
+                                      <option value="4">Pembayaran Terkonfirmasi</option>
+                                      <option value="5">Selesai</option>
+                                      <option value="6" disabled>Gagal/Dibatalkan</option>
+                                    </select>
+                                  </div>
+                                    
+                              <a class="button button-primary button-pipaluk" type="button" href="admin_transaksi-rentcar.html" style="text-decoration: none;">Verifikasi</a>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">

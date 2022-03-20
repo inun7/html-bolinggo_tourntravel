@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Travel Promo - Admin</title>
+        <title>Tambah Data Rentcar - Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
@@ -50,8 +50,8 @@
                             <div class="collapse" id="menuKonten" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="admin_konten-travel-reguler.html">Travel-Reguler</a>
-                                    <a class="nav-link active" href="admin_konten-travel-promo.html">Travel-Promo</a>
-                                    <a class="nav-link" href="admin_konten-rentcar.html">Rentcar</a>
+                                    <a class="nav-link" href="admin_konten-travel-promo.html">Travel-Promo</a>
+                                    <a class="nav-link active" href="admin_konten-rentcar.html">Rentcar</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#menuTransaksi" aria-expanded="false" aria-controls="collapseLayouts">
@@ -81,68 +81,47 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h3 class="mt-4">Konten Travel Promo</h3>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Data</li>
-                        </ol>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <a href="admin_create-travel-promo.html" class="btn btn-primary">Tambah Data Baru</a>
-                            </div>
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Konten Travel Promo
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Foto</th>
-                                            <th>Deskripsi</th>
-                                            <th>Harga</th>
-                                            <th>Waktu</th>
-                                            <th>Jumlah (Orang)</th>
-                                            <th>Deadline</th>
-                                            <th colspan="2">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Foto</th>
-                                            <th>Deskripsi</th>
-                                            <th>Harga</th>
-                                            <th>Waktu (Hari)</th>
-                                            <th>Jumlah (Orang)</th>
-                                            <th>Deadline</th>
-                                            <th colspan="2">Aksi</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Bandung</td>
-                                            <td>
-                                                <img src="images/travel-promo/floating_market_lembang_bandung.jpg" alt="Foto Lokasi" style="width: 50px;;">
-                                            </td>
-                                            <td>
-                                                Setibanya di Bandung kita akan...
-                                            </td>
-                                            <td>900.000</td>
-                                            <td>3</td>
-                                            <td>6</td>
-                                            <td>18/03/2021</td>
-                                            <td>
-                                                <a href="admin_read-travel-promo.html" class="btn btn-info">Lihat</a>
-                                                <a href="admin_update-travel-promo.html" class="btn btn-warning">Edit</a>
-                                                <a href="#" class="btn btn-danger">Hapus</a>
-                                            </td>
-                                        </tr>
+                        <div class="col-md-12">
+                            <div class="card-body" style="text-align: left;">
+                                <h3 class="mb-3">Tambah Data Rentcar</h3>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Nama</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="nama" required>
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon4">Foto</span>
+                                    <input type="file" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="foto" accept="image/*" required>
+                                  </div>
+                                  
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text">Plat</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="plat" required>
+                                  </div>
 
-                                    </tbody>
-                                </table>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Warna</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="warna" required>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">STNK</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="stnk" required>
+                                  </div>
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">BPKB</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="bpkb" required>
+                                  </div>
+
+                                  <div class="input-group mb">
+                                    <span class="input-group-text" id="basic-addon3">Harga</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" min="1" name="jumlah" required>
+                                  </div>
+
+                              <a class="button button-primary button-pipaluk" type="button" href="admin_konten-rentcar.html" style="text-decoration: none;">Tambah Data</a>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
