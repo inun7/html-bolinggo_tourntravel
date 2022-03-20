@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Rekap Transaksi Travel - Bolinggo Tour & Travel</title>
+    <title>Travel Reguler - Bolinggo Tour & Travel</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,22 +65,22 @@
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav ms-auto">
                     <li class="rd-nav-item"><a class="rd-nav-link" href="user_index.html">Beranda</a></li>
-                    <li class="rd-nav-item dropdown">
+                    <li class="rd-nav-item dropdown active">
                       <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Travel
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="user_travel-reguler.html">Reguler</a></li>
+                        <li><a class="dropdown-item active" href="user_travel-reguler.html">Reguler</a></li>
                         <li><a class="dropdown-item" href="user_travel-promo.html">Promo</a></li>
                       </ul>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="user_rentcar.html">Rentcar</a></li>
-                    <li class="rd-nav-item dropdown active">
+                    <li class="rd-nav-item dropdown">
                       <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Transaksi
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item active" href="user_transaksi-travel.html">Travel</a></li>
+                        <li><a class="dropdown-item" href="user_transaksi-travel.html">Travel</a></li>
                         <li><a class="dropdown-item" href="user_transaksi-rentcar.html">Rentcar</a></li>
                       </ul>
                     </li>
@@ -101,162 +101,62 @@
           </nav>
         </div>
       </header>
-      <!-- Breadcrumbs -->
-      <section class="breadcrumbs-custom-inset">
-        <div class="breadcrumbs-custom context-dark bg-overlay-60">
-          <div class="container">
-            <h2 class="breadcrumbs-custom-title">Transaksi-Travel</h2>
-            <ul class="breadcrumbs-custom-path">
-              <li><a href="user_index.html">Beranda</a></li>
-              <li class="active">Transaksi-Travel</li>
-            </ul>
-          </div>
-          <div class="box-position" style="background-image: url(images/bg/bg_1.jpg);"></div>
-        </div>
-      </section>
-      <!--	Our Services-->
-      <section class="section section-sm">
+      
+      <!-- Form Travel -->
+      <section class="section section-sm section-last bg-default text-left">
         <div class="container">
-          <h3>Rekap Transaksi Travel</h3>
-            <div class="row">
-
-              <div class="col-sm-4 mt-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Bandung</h5>
-                    <p class="card-text">Rp. 900.000</p>
-                    <ul class="list-group list-group-flush" style="text-align: left;">
-                      <li class="list-group-item">Tanggal: 13/01/2022 08:30 WIB</li>
-                      <li class="list-group-item">Waktu: 3 Hari</li>
-                      <li class="list-group-item">Status: <span style="color: orange;">Menunggu Konfirmasi</span></li>
-                    </ul>
-                    <a href="user_detail-transaksi-travel.html" class="btn btn-primary">Detail</a>
+            <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Tuliskan Secara Lengkap Tujuan Wisata Anda</span></h3>
+            <br>
+            <form action="">
+              <div class="card p-3">
+                  <div class="row g-0">
+                    <div class="col-md-12">
+                      <div class="card-body" style="text-align: left;">
+                          <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon3">Nama</span>
+                              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="nama" required>
+                            </div>
+                            
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon4">HP (WA)</span>
+                              <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="hp" required>
+                            </div>
+                            
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon5">Tanggal</span>
+                              <input type="datetime-local" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="checkin" min="2022-03-14T00:00" required>
+                            </div>
+            
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon6">Waktu (Hari)</span>
+                              <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="waktu" min="1" required>
+                            </div>
+            
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon7">Jumlah Orang</span>
+                              <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="jumlah" min="1" required>
+                            </div>
+                            
+                            <div class="input-group">
+                              <span class="input-group-text">Catatan</span>
+                              <textarea class="form-control" aria-label="With textarea" maxlength="25"></textarea>
+                            </div>
+            
+                            <br>
+            
+                            <div class="input-group">
+                              <label>Keterangan: Setelah data kami terima, kami mengkonfirmasi balik harga dan pesanan anda via WA.</label>
+                            </div>
+                        <a class="button button-primary button-pipaluk" type="button" href="user_index.html">Pesan</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="col-sm-4 mt-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Bali</h5>
-                    <p class="card-text">Rp. 900.000</p>
-                    <ul class="list-group list-group-flush" style="text-align: left;">
-                      <li class="list-group-item">Tanggal: 13/01/2022 08:30 WIB</li>
-                      <li class="list-group-item">Waktu: 3 Hari</li>
-                      <li class="list-group-item">Status: <span style="color: red;">Dibatalkan/Gagal</span></li>
-                    </ul>
-                    <a href="user_detail-transaksi-travel.html" class="btn btn-primary">Detail</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-4 mt-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Malang</h5>
-                    <p class="card-text">Rp. 850.000</p>
-                    <ul class="list-group list-group-flush" style="text-align: left;">
-                      <li class="list-group-item">Tanggal: 13/01/2022 08:30 WIB</li>
-                      <li class="list-group-item">Waktu: 3 Hari</li>
-                      <li class="list-group-item">Status: <span style="color: green;">Sukses</span></li>
-                    </ul>
-                    <a href="user_detail-transaksi-travel.html" class="btn btn-primary">Detail</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+          </form>
         </div>
       </section>
-      <!-- Section Subscribe-->
-      <section class="section bg-default text-center offset-top-50">
-        <div class="parallax-container" data-parallax-img="images/parallax-1-1920x850.jpg">
-          <div class="parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-2-21">
-            <div class="container">
-              <h2 class="heading-2 oh font-weight-normal wow slideInDown">
-                <span class="d-block font-weight-semi-bold">Bolinggo Tour & Travel</span>
-                <span class="d-block font-weight-light">menemani perjalanan wisata anda!</span>
-              </h2>
-              <p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Sudah berpengalaman di bidang pariwisata!</p>
-              <a class="button button-secondary button-pipaluk" href="#">Kontak</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--	Instagrram wondertour-->
-      <section class="section section-sm section-top-0 section-fluid section-relative bg-gray-4">
-        <div class="container-fluid">
-          <h6 class="gallery-title">Gallery</h6>
-          <!-- Owl Carousel-->
-          <div class="owl-carousel owl-classic owl-dots-secondary" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-xl-items="5" data-xxl-items="6" data-stage-padding="15" data-xxl-stage-padding="0" data-margin="30" data-autoplay="true" data-nav="true" data-dots="true">
-            <!-- Thumbnail Classic-->
-            <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure">
-                <img src="images/gallery/floating_market_lembang_bandung.jpg" alt="" style="width: 270px; height: 195px;"/>
-              </div>
-              <div class="thumbnail-mary-caption">
-                <a class="icon fl-bigmug-line-zoom60" href="images/gallery/floating_market_lembang_bandung.jpg" data-lightgallery="item">
-                  <img src="images/gallery/floating_market_lembang_bandung.jpg" alt=""/>
-                </a>
-              </div>
-            </article>
-            <!-- Thumbnail Classic-->
-            <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure">
-                <img src="images/gallery/hawai_waterpark_malang.jpg" alt="" style="width: 270px; height: 195px;"/>
-              </div>
-              <div class="thumbnail-mary-caption">
-                <a class="icon fl-bigmug-line-zoom60" href="images/gallery/hawai_waterpark_malang.jpg" data-lightgallery="item" >
-                  <img src="images/gallery/hawai_waterpark_malang.jpg" alt=""/>
-                </a>
-              </div>
-            </article>
-            <!-- Thumbnail Classic-->
-            <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure">
-                <img src="images/gallery/malioboro_jogja.jpg" alt="" style="width: 270px; height: 195px;"/>
-              </div>
-              <div class="thumbnail-mary-caption">
-                <a class="icon fl-bigmug-line-zoom60" href="images/gallery/malioboro_jogja.jpg" data-lightgallery="item" >
-                  <img src="images/gallery/malioboro_jogja.jpg" alt=""/>
-                </a>
-              </div>
-            </article>
-            <!-- Thumbnail Classic-->
-            <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure">
-                <img src="images/gallery/floating_market_lembang_bandung.jpg" alt="" style="width: 270px; height: 195px;"/>
-              </div>
-              <div class="thumbnail-mary-caption">
-                <a class="icon fl-bigmug-line-zoom60" href="images/gallery/floating_market_lembang_bandung.jpg" data-lightgallery="item">
-                  <img src="images/gallery/floating_market_lembang_bandung.jpg" alt=""/>
-                </a>
-              </div>
-            </article>
-            <!-- Thumbnail Classic-->
-            <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure">
-                <img src="images/gallery/hawai_waterpark_malang.jpg" alt="" style="width: 270px; height: 195px;"/>
-              </div>
-              <div class="thumbnail-mary-caption">
-                <a class="icon fl-bigmug-line-zoom60" href="images/gallery/hawai_waterpark_malang.jpg" data-lightgallery="item" >
-                  <img src="images/gallery/hawai_waterpark_malang.jpg" alt=""/>
-                </a>
-              </div>
-            </article>
-            <!-- Thumbnail Classic-->
-            <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure">
-                <img src="images/gallery/malioboro_jogja.jpg" alt="" style="width: 270px; height: 195px;"/>
-              </div>
-              <div class="thumbnail-mary-caption">
-                <a class="icon fl-bigmug-line-zoom60" href="images/gallery/malioboro_jogja.jpg" data-lightgallery="item" >
-                  <img src="images/gallery/malioboro_jogja.jpg" alt=""/>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
+      <!-- End Form Travel -->
+
       </section>
       <!-- Page Footer-->
       <footer class="section footer-corporate context-dark">

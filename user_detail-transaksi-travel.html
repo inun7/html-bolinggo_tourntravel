@@ -80,7 +80,7 @@
                         Transaksi
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown- active" href="user_transaksi-travel.html">Travel</a></li>
+                        <li><a class="dropdown-item active" href="user_transaksi-travel.html">Travel</a></li>
                         <li><a class="dropdown-item" href="user_transaksi-rentcar.html">Rentcar</a></li>
                       </ul>
                     </li>
@@ -134,7 +134,7 @@
                                   </div>
                                   
                                   <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon5">Tgl. Keberangkatan</span>
+                                    <span class="input-group-text" id="basic-addon5">Tanggal</span>
                                     <input type="datetime-local" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="checkin" value="2022-03-18T19:30" readonly>
                                   </div>
                   
@@ -155,12 +155,13 @@
 
                                   <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon6">Status</span>
-                                    <select class="form-select" aria-label="Default select example" disabled="disabled">
+                                    <select class="form-select" aria-label="Default select example">
                                       <option selected value="2">Menunggu Pembayaran</option>
-                                      <option value="1">Menunggu Konfirmasi</option>
-                                      <option value="3">Konfimasi Pembayaran</option>
-                                      <option value="4">Selesai</option>
-                                      <option value="5">Gagal/Dibatalkan</option>
+                                      <option value="1" disabled>Menunggu Konfirmasi Pesanan</option>
+                                      <option value="3">Pembayaran</option>
+                                      <option value="4" disabled>Pembayaran Terkonfirmasi</option>
+                                      <option value="5" disabled>Selesai</option>
+                                      <option value="6" disabled>Gagal/Dibatalkan</option>
                                     </select>
                                   </div>
                   
@@ -170,7 +171,10 @@
                                   </div>
                   
                                   <div class="input-group">
-                                    <label>Keterangan: Pesanan anda sudah terkonfirmasi, lakukan pembayaran sebelum 2x24 jam.</label>
+                                    <label>
+                                      Keterangan: Pesanan anda sudah terkonfirmasi, lakukan pembayaran sebelum 2x24 jam. <br>
+                                      Rekening: 6227 090876 09867 (BRI a.n CV. Bolinggo Tour & Travel)
+                                    </label>
                                   </div>
                               <button class="button button-primary button-pipaluk" type="submit" href="#">Bayar</button>
                             </div>
